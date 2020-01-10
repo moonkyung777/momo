@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div style="width: 500px; margin: auto; margin-top: 200px;">
+		<form id="frm">
+			<div>
+				<label>글번호</label><input name="number" id="number">
+			</div>
+			<div style= "margin-top: 20px;">
+				<label>아이디</label><input name="id">	
+			</div>
+	</div>
+</body>
+</html>

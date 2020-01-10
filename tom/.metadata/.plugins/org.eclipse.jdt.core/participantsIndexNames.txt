@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\tom\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\481596118.index
+\HTML_tst\src
+D:\tom\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3158772419.index
+\HTML_tst\src

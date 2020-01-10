@@ -1,0 +1,36 @@
+<%@page import="qnaPack.QnaDao"%>
+<%@page import="qnaPack.QnaDto"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
+<%
+ // String qNo = request.getParameter("id");
+  String qMember = request.getParameter("qnaid");
+  String qSecret = request.getParameter("secret");
+  String qSecretNum = request.getParameter("qnapw");
+//  String qDate = request.getParameter("secret");
+//  String qCount = request.getParameter("hp3");
+  String qContents = request.getParameter("qContents");
+  String qTitle = request.getParameter("qnatitle");
+//  String qEmail = request.getParameter("gender");
+  
+  
+  QnaDto qdt = new QnaDto();
+  
+  QnaDao qda = new QnaDao();
+  
+  
+  
+  qdt.setqMember(qMember);
+  qdt.setqSecret(qSecret);
+  qdt.setqSecretNum(qSecretNum);
+  qdt.setqContents(qContents);
+  qdt.setqTitle(qTitle);
+  
+  QnaDao qda.Qna_insert(QnaDto qdt);
+
+  
+  
+
+  
+
+%>

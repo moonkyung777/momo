@@ -1,0 +1,31 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="qnaPack.QnaDao"%>
+<%@page import="qnaPack.QnaDto"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
+<jsp:useBean id="qdtt" class="qnaPack.QnaDao" />
+<table border="1"style="text-align:center;">
+	<thead><tr><td>getqMember</td><td>getqSecret</td><td>getqSecretNum</td><td>getqContents</td><td>getqTitle</td></tr></thead>
+	<tbody>
+<%
+	ArrayList<QnaDto> qda = qdtt.select();
+	for (int i = 0; i < qda.size(); i++) {%>
+<tr><td>
+		<%out.println(qda.get(i).getqMember());%></td>
+		<td>
+		<%out.println(qda.get(i).getqSecret());%></td>
+		<td>
+		<%out.println(qda.get(i).getqSecretNum());%></td>
+		<td>
+		<%out.println(qda.get(i).getqContents());%></td>
+		<td>
+		<%out.println(qda.get(i).getqTitle());%></td>
+		</tr>
+	</tbody>
+	
+	<%}%>
+
+
+
+

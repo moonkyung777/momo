@@ -1,0 +1,45 @@
+<%@page import="qnaPack.QnaDao"%>
+<%@page import="qnaPack.QnaDto"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
+<jsp:useBean id="qdtt" class="qnaPack.QnaDao"/>
+<%
+ // String qNo = request.getParameter("id");
+  String qMember = request.getParameter("qnaid"); //입력값
+  String qSecret = request.getParameter("secret");
+  String qSecretNum = request.getParameter("qnapw");
+//  String qDate = request.getParameter("secret");
+//  String qCount = request.getParameter("hp3");
+  String qContents = request.getParameter("qContents");
+  String qTitle = request.getParameter("qnatitle");
+//  String qEmail = request.getParameter("gender");
+  
+  
+ // QnaDto qdt = new QnaDto(); // dto 객체 생성
+  
+  QnaDao qda = new QnaDao();
+ 
+  QnaDto qdtt = new QnaDto();
+  
+  
+  QnaDto qdd = qdtt.Qna_insert(qdt);
+  
+  
+  qdt.setqMember(qMember); //dto에 값 세팅
+  qdt.setqSecret(qSecret); //dto에 값 세팅
+  qdt.setqSecretNum(qSecretNum); //dto에 값 세팅
+  qdt.setqContents(qContents); //dto에 값 세팅
+  qdt.setqTitle(qTitle); //dto에 값 세팅
+  
+  qda.Qna_insert(qdt);
+  
+  
+  
+  
+
+  
+  
+
+  
+
+%>
