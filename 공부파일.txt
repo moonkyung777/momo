@@ -1,0 +1,19 @@
+﻿sign.jsp  : 회원가입 화면
+common.js : 회원가입할떄 이미지 입력하는 js파일
+join.css : 버튼 스타일파일
+classic.date: 버튼 위치 [패스워드2 등등]
+signbutton.css : 가입버튼 css
+signformrelocation.css : 은행 , 우편찾기 버튼위치조정 css
+footer.css: footer 크기,링크 글짜크기 css
+style2.css :  상담 메뉴바  css
+basicStyle.css :바디 메인 css파일
+navmid33.css : 중간부분 내비 css
+confirmId.js : 아이디 중복확인 js
+footer.jsp : 하단 부분 화면 
+findpass/findid.jsp : 아이디찾기 jsp
+/findpassfindid_select : 아이디 찾기시 값 출력 jsp
+findpass/findid_success : 아이디 찾기시 아이디값  출력후 보여주는화면.
+Footer.jsp: 하단 메인화면 
+Q&Astyle.css: 갤러리 qna스타일
+futsalground.jsp : 풋살구장등록화면
+-----------------------------------------------------------
