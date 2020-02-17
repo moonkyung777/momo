@@ -23,5 +23,4 @@ public class LoginAction {
 		return loginuser;
 	}
 
-
 }
